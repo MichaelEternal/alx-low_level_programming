@@ -9,16 +9,16 @@
 *
 *Return:pointertothememoryareas
 */
-char *_memset(char *s,charb,unsignedintn)
+char *_memset(char *s, charb, unsignedintn)
 {
 unsignedinti;
 
-for (i = 0;i < n;i++)
+for (i = 0; i < n; i++)
 {
 s[i] = b;
 }
 
-return(s);
+return (s);
 }
 
 /**
@@ -32,7 +32,7 @@ void *_calloc(unsignedintnmemb,unsignedintsize)
 {
 char *ptr;
 
-if(nmemb == 0 || size == 0)
+if (nmemb == 0 || size == 0)
 return (NULL);
 
 ptr = malloc (size *nmemb);
@@ -40,7 +40,7 @@ ptr = malloc (size *nmemb);
 if (ptr == NULL)
 return (NULL);
 
-_memset (ptr, 0, nmemb *size);
+_memset(ptr, 0, nmemb *size);
 
-return(ptr);
+return (ptr);
 }
